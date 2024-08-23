@@ -1,0 +1,5 @@
+./analyzeLightBSM runList_skimmed_Summer20UL18_WGJets_MonoPhoton_PtG-40to130.txt Autumn18.WGJets_PtG-40to130_LostElectron_MET100_pT40.root 2018 WGJets_MonoPhoton_PtG-40to130UL Electron loose
+./analyzeLightBSM runList_skimmed_Summer20UL18_WGJets_MonoPhoton_PtG-40to130.txt Autumn18.WGJets_PtG-40to130_LostMuon_MET100_pT40.root 2018 WGJets_MonoPhoton_PtG-40to130UL Muon loose
+./analyzeLightBSM runList_skimmed_Summer20UL18_WGJets_MonoPhoton_PtG-130.txt Autumn18.WGJets_PtG-130_LostElectron_MET100_pT40.root 2018 WGJets_MonoPhoton_PtG-130UL Electron loose
+./analyzeLightBSM runList_skimmed_Summer20UL18_WGJets_MonoPhoton_PtG-130.txt Autumn18.WGJets_PtG-130_LostMuon_MET100_pT40.root 2018 WGJets_MonoPhoton_PtG-130UL Muon loose
+

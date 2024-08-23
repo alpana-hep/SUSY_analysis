@@ -1,0 +1,30 @@
+#!/bin/bash
+#WJetsToLNu_HT_v1
+# hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_loose_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_loose_pt40_Muon'`
+# hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_medium_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_medium_pt40_Muon'`
+# hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_tight_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_tight_pt40_Muon'`
+# hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_mva_wp90_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_mva_wp90_pt40_Muon'`
+# hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_mva_wp80_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_mva_wp80_pt40_Muon'`
+
+
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_loose_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_loose_pt40_Muon'`
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_medium_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_medium_pt40_Muon'`
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_tight_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_tight_pt40_Muon'`
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_mva_wp90_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_mva_wp90_pt40_Muon'`
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_mva_wp80_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_mva_wp80_pt40_Muon'`
+
+
+hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_wPho_pT_g40_MET100_phoID_loose_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_loose_pt40_Muon'`
+hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_wPho_pT_g40_MET100_phoID_medium_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_medium_pt40_Muon'`
+hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_wPho_pT_g40_MET100_phoID_tight_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_tight_pt40_Muon'`
+hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_wPho_pT_g40_MET100_phoID_mva_wp90_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_mva_wp90_pt40_Muon'`
+hadd -f Autumn18_lowPhotpT_WJetsToLNu_HT_LL_estimation_wPho_pT_g40_MET100_phoID_mva_wp80_Muon.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WJetsToLNu_HT_v1_phoID_mva_wp80_pt40_Muon'`
+ 
+
+
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_loose_Electron.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_loose_pt40_Electron'`
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_medium_Electron.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_medium_pt40_Electron'`
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_tight_Electron.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_tight_pt40_Electron'`
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_mva_wp90_Electron.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_mva_wp90_pt40_Electron'`
+# hadd -f Autumn18_lowPhotpT_WGJets_MonoPhoton_PtG-40to130_LL_estimation_Electron_wPho_pT_g40_MET100_phoID_mva_wp80_Electron.root `xrdfsls -u /store/user/kalpana/updatedbkg_LL2022/with_PhoPt_40_MET100  | grep 'runList_Autumn18_lowPhopT_WGJetsPtG-40to130_v18_phoID_mva_wp80_pt40_Electron'`
+

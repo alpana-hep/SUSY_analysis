@@ -1,45 +1,28 @@
-# SUSY_analysis
-We need to use un-prescaled triggers that means effective luminosity should be equal to the actual luminosity. For our analysis, we need to choose triggers for Photon Pt, MET & HT. So, acc. to this knowledge, I have tried to select some triggers for 2016, 2017 and 2018.
+## This code is for implementing all baseline selections and checking their impact on different MC samples.
 
-2016
---------------------------------------------------------------------------------------
-For Photon triggers --> https://twiki.cern.ch/twiki/bin/view/CMS/EgHLTRunIISummary#2016
-1. HLT_Photon165_HE10_v (active lumi: 36.47 fb-1 & eff. lumi: 36.47 fb-1)
-2. HLT_Photon175_v (active lumi: 36.47 fb-1 & eff. lumi: 36.47 fb-1)
-3. HLT_Photon90_CaloIdL_PFHT600
-4. HLT_Photon135_PFMET100_v
+## Instructions to run the code -
+```
+git clone -b UL_baselineMachinery https://github.com/alpana-hep/susy_2020.git .
+make (run make after you change anything in any of the source/header file)
+./analyzeLightBSM <filelist> <outfile> <year <process> Electron <photon ID>
+```
+String 'Electron' is not used inside the code anywhere, so keep it constant.
+Note - if you are reading nevents & cross section from the 'map_crosssection_SMprocess_v1.txt' file then make sure to keep the <process> name similar to the saved in 'map_crosssection_SMprocess.txt' and should contain UL in it if you are analyzing UL ntuples.
+<photon ID>: 'loose', 'medium', 'tight','mva_wp90','mva_p80'
+(Note-  first three are cutbased ID recommended by Egamma group.)
 
-For HT and MET triggers --> https://fwyzard.web.cern.ch/fwyzard/hlt/2016/summary.html
-1. HLT_PFHT900
-2. HLT_PFHT300_PFMET100
-3. HLT_PFHT300_PFMET110
-4. HLT_PFMET90_PFMHT90_IDTight
-5. HLT_PFMET100_PFMHT100_IDTight
-6. HLT_PFMET110_PFMHT110_IDTight
-7. HLT_PFMET120_PFMHT120_IDTight
-8. HLT_PFMET300
-9. HLT_PFMET400
-10. HLT_PFMET500
-11. HLT_PFMET600
+To submit the condor jobs:
+<executable> is 'worker2.sh' (change or add destination path in worker2.sh). If no path is added than it will store in the parent directory from where the jobs are submitted. 
 
+spliRunlist.C - create condor files and submit the condor jobs (improtant to add the files which you want to transfer)
+submitMany2.sh - submit multiple jobs at a time.
+clean*.sh - to clean the log files of the condor jobs
 
-For electron triggers →
-1. HLT_Ele32_eta2p1_WPTight_Gsf_v  (active lumi: 36.47 fb-1 & eff. lumi: 36.47 fb-1
-2. HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v
-3. HLT_Ele27_eta2p1_WPLoose_Gsf_v
-4. HLT_Ele25_eta2p1_WPTight_Gsf_v
-5. HLT_Ele27_WPTight_Gsf_v
-8. HLT_Ele45_WPLoose_Gsf_v
-7. HLT_Ele105_CaloIdVT_GsfTrkIdT_v
-7. HLT_Ele115_CaloIdVT_GsfTrkIdT_v
-
-
-For Muon triggers →
-1. HLT_IsoMu20_v
-2. HLT_IsoMu22_v
-3. HLT_IsoMu24_v
-4. HLT_IsoMu27_v
-5. HLT_IsoTkMu22_v
-6. HLT_IsoTkMu24_v
-7. HLT_Mu50_v
-8. HLT_Mu55_v
+Example to run the script
+```
+./analyzeLightBSM temp_QCD.txt out_Summer20UL18_WJetsToLNu_HT-100To200_v20.root 2018 WJetsUL Electron loose
+```
+Example to submit condor jobs
+```
+source submitMany2.sh
+``
